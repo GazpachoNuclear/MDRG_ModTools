@@ -1,0 +1,12 @@
+# ninja log v5
+91	897	7752219256565869	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	7f0c191c9a589683
+51	4519	7752219293041967	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d485e712f8e7bf58
+72	4597	7752219293841709	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	13b82d21da5e8900
+9	5217	7752219298855315	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e606d0d0e8a215a6
+902	5218	7752219298445448	D:/factorial-omega-win-64/ModTools/MDRG_ModdingTools/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/25s2425t/obj/arm64-v8a/libswappywrapper.so	55a4792208926c3e
+60	5239	7752219299505112	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	bed90027e74ebe18
+28	5390	7752219301664412	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	18344ee896195a3e
+2	5540	7752219303353933	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	5f1db3324ac51d7e
+21	5921	7752219307179370	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	9e25dc44487cfd39
+15	6020	7752219308086949	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	6ba4adafc1a1a255
+6021	6246	7752219310441178	D:/factorial-omega-win-64/ModTools/MDRG_ModdingTools/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/25s2425t/obj/arm64-v8a/libgame.so	f687eac7dcbd8bfb

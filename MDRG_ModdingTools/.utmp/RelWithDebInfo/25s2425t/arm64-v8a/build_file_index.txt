@@ -1,0 +1,3 @@
+D:\factorial-omega-win-64\ModTools\MDRG_ModdingTools\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\factorial-omega-win-64\ModTools\MDRG_ModdingTools\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+D:\factorial-omega-win-64\ModTools\MDRG_ModdingTools\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
