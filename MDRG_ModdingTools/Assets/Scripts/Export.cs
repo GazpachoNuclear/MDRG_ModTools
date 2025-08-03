@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using System;
 using TMPro;
 using UnityEngine.UI;
 
@@ -15,15 +16,23 @@ public class Export : MonoBehaviour
     public GameObject popUp;
     public TMP_Text path;
 
+    private Guid guid;
+
+    //Launches the main functions
     public void ExportMod()
     {
+        guid = Guid.NewGuid();
+
         count = 0;
+
         path.text = "";
+
         createJSON();
         createLUA();
         popUp.SetActive(true);
     }
 
+    //Parses all information to the JSON file
     private void createJSON()
     {
         JSON = "";
@@ -32,14 +41,14 @@ public class Export : MonoBehaviour
         "\"description\": \"" + content[0].transform.GetChild(1).GetComponentInChildren<TMP_InputField>().text + "\",\n" +
         "\"OnGameStart\": {\n" +
                             "\"luaFiles\": [\n" +
-                    "\"script.lua\"\n" +
+                    "\"" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua\"\n" +
             "]\n" +
         "},\n" +
         "\"targetVersion\": \"0.90.15\"\n," +
         "\"doNotChangeVariablesBelowThis\": {\n" +
                 "\"timeCreated\": 638842586268180000,\n" +
             "\"guid\": {\n" +
-                    "\"serializedGuid\": \"4207c48d-b072-4a93-b95e-ce3e048c4226\"\n" +
+                    "\"serializedGuid\": \"" + guid.ToString() + "\"\n" +
             "}\n" +
         "}\n" +
         "}";
@@ -54,11 +63,12 @@ public class Export : MonoBehaviour
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/mod.json", JSON);
-            path.text += Application.persistentDataPath + "/mod.json\n &\n";
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json", JSON);
+            path.text += Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json\n &\n";
         }
     }
 
+    //Parses all information to the LUA file
     private void createLUA()
     {
         LUA = "";
@@ -131,20 +141,20 @@ public class Export : MonoBehaviour
 
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/script.lua"))
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua"))
             {
                 sw.WriteLine(LUA);
-                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/script.lua";
+                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua";
             }
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/script.lua", LUA);
-            path.text += Application.persistentDataPath + "/script.lua";
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua", LUA);
+            path.text += Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua";
         }
     }
 
-
+    //Per each LUA entry (character line), the script parses it and sets it in a single scaped line
     private string ParseLuaSegment(string raw, string name)
     {
         string[] splitted = raw.Split("\n");
@@ -158,13 +168,31 @@ public class Export : MonoBehaviour
         return parsed;
     }
 
+    //Scapes the lines for LUA
     private string ScapeText(string raw)
     {
         return raw.Replace("'", "\\'");
     }
 
+    //Removes new lines
     private string CleanNextLines(string raw)
     {
         return raw.Replace("\n", "");
+    }
+
+    //Cleans the files names to avoid forbidden special characters
+    private string CleanName(string raw)
+    {
+        raw = raw.Replace("<","");
+        raw = raw.Replace(">", "");
+        raw = raw.Replace(":", "");
+        raw = raw.Replace("\"", "");
+        raw = raw.Replace("\\", "");
+        raw = raw.Replace("/", "");
+        raw = raw.Replace("|", "");
+        raw = raw.Replace("?", "");
+        raw = raw.Replace("*", "");
+        raw = raw.Replace(" ", "_");
+        return raw;
     }
 }
