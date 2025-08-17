@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 2491c7a8b3bc71a4f9aa3342bbce8ef1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1748621851936593648
+    second: bounds4_doggy_texture0_layer0_0
+  - first:
+      213: -7251680068641857774
+    second: bounds4_doggy_texture0_layer0_1
+  - first:
+      213: -3158395429610300930
+    second: bounds4_doggy_texture0_layer0_2
+  - first:
+      213: -1333827683616581048
+    second: bounds4_doggy_texture0_layer0_3
+  - first:
+      213: -274593525068473646
+    second: bounds4_doggy_texture0_layer0_4
+  - first:
+      213: 934052028862828181
+    second: bounds4_doggy_texture0_layer0_5
+  - first:
+      213: -566929132142441201
+    second: bounds4_doggy_texture0_layer0_6
+  - first:
+      213: 1772196997532356922
+    second: bounds4_doggy_texture0_layer0_7
+  - first:
+      213: -9086721757794771146
+    second: bounds4_doggy_texture0_layer0_8
+  - first:
+      213: 6969565123447326770
+    second: bounds4_doggy_texture0_layer0_9
+  - first:
+      213: 8652281910288933483
+    second: bounds4_doggy_texture0_layer0_10
+  - first:
+      213: -8868945488003231208
+    second: bounds4_doggy_texture0_layer0_11
+  - first:
+      213: -2895053570004195943
+    second: bounds4_doggy_texture0_layer0_12
+  - first:
+      213: -7189000345188569970
+    second: bounds4_doggy_texture0_layer0_13
+  - first:
+      213: -982827382571560955
+    second: bounds4_doggy_texture0_layer0_14
+  - first:
+      213: 6914276959958053836
+    second: bounds4_doggy_texture0_layer0_15
+  - first:
+      213: 3021743280290920599
+    second: bounds4_doggy_texture0_layer0_16
+  - first:
+      213: -3467296151213417086
+    second: bounds4_doggy_texture0_layer0_17
+  - first:
+      213: -120288476471495170
+    second: bounds4_doggy_texture0_layer0_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 805
+        width: 101
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01965d4b0b5abb7e0800000000000000
+      internalID: -1748621851936593648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 748
+        width: 152
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f52db066bdc5b90800000000000000
+      internalID: -7251680068641857774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 749
+        width: 79
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef95cd537102b24d0800000000000000
+      internalID: -3158395429610300930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_3
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 741
+        width: 189
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a9376e9ca4d7de0800000000000000
+      internalID: -1333827683616581048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_4
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 739
+        width: 188
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dadba0d4a2703cf0800000000000000
+      internalID: -274593525068473646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 544
+        width: 225
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e0a161f5b66fc00800000000000000
+      internalID: 934052028862828181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 472
+        width: 242
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d44d145fcd128f0800000000000000
+      internalID: -566929132142441201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_7
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 471
+        width: 238
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a311eed97cb189810800000000000000
+      internalID: 1772196997532356922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_8
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 471
+        width: 126
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f54dd64ba75e180800000000000000
+      internalID: -9086721757794771146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 279
+        width: 246
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238870ead8ed8b060800000000000000
+      internalID: 6969565123447326770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 237
+        width: 247
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b626f4f3e84131870800000000000000
+      internalID: 8652281910288933483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_11
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 399
+        width: 82
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812934f711d2be480800000000000000
+      internalID: -8868945488003231208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_12
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 399
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9956c22ed14b2d7d0800000000000000
+      internalID: -2895053570004195943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_13
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 238
+        width: 195
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cefd6664a8b3c90800000000000000
+      internalID: -7189000345188569970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3
+        width: 253
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5009b4ae3bb4c52f0800000000000000
+      internalID: -982827382571560955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_15
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 238
+        width: 208
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3b7fcf24274ff50800000000000000
+      internalID: 6914276959958053836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3
+        width: 247
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798f928e0836fe920800000000000000
+      internalID: 3021743280290920599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_17
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 3
+        width: 218
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d58df5580b1efc0800000000000000
+      internalID: -3467296151213417086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds4_doggy_texture0_layer0_18
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 3
+        width: 164
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5f7599446a45ef0800000000000000
+      internalID: -120288476471495170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bounds4_doggy_texture0_layer0_0: -1748621851936593648
+      bounds4_doggy_texture0_layer0_1: -7251680068641857774
+      bounds4_doggy_texture0_layer0_10: 8652281910288933483
+      bounds4_doggy_texture0_layer0_11: -8868945488003231208
+      bounds4_doggy_texture0_layer0_12: -2895053570004195943
+      bounds4_doggy_texture0_layer0_13: -7189000345188569970
+      bounds4_doggy_texture0_layer0_14: -982827382571560955
+      bounds4_doggy_texture0_layer0_15: 6914276959958053836
+      bounds4_doggy_texture0_layer0_16: 3021743280290920599
+      bounds4_doggy_texture0_layer0_17: -3467296151213417086
+      bounds4_doggy_texture0_layer0_18: -120288476471495170
+      bounds4_doggy_texture0_layer0_2: -3158395429610300930
+      bounds4_doggy_texture0_layer0_3: -1333827683616581048
+      bounds4_doggy_texture0_layer0_4: -274593525068473646
+      bounds4_doggy_texture0_layer0_5: 934052028862828181
+      bounds4_doggy_texture0_layer0_6: -566929132142441201
+      bounds4_doggy_texture0_layer0_7: 1772196997532356922
+      bounds4_doggy_texture0_layer0_8: -9086721757794771146
+      bounds4_doggy_texture0_layer0_9: 6969565123447326770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

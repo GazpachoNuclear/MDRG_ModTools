@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 5ec26bbbadc0c064c8ffddb0c105a73a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5215019246784929324
+    second: bounds8_blowjob_texture0_layer0_0
+  - first:
+      213: 8380082265193970186
+    second: bounds8_blowjob_texture0_layer0_1
+  - first:
+      213: 3805971275746732517
+    second: bounds8_blowjob_texture0_layer0_2
+  - first:
+      213: 4505302588087215544
+    second: bounds8_blowjob_texture0_layer0_3
+  - first:
+      213: -849411072996129428
+    second: bounds8_blowjob_texture0_layer0_4
+  - first:
+      213: -8487187920270037930
+    second: bounds8_blowjob_texture0_layer0_5
+  - first:
+      213: -5405223909515363454
+    second: bounds8_blowjob_texture0_layer0_6
+  - first:
+      213: -8049618989823672521
+    second: bounds8_blowjob_texture0_layer0_7
+  - first:
+      213: -3765184229238803027
+    second: bounds8_blowjob_texture0_layer0_8
+  - first:
+      213: -4483468838423071153
+    second: bounds8_blowjob_texture0_layer0_9
+  - first:
+      213: 8692958875980335922
+    second: bounds8_blowjob_texture0_layer0_10
+  - first:
+      213: -9080280030451359788
+    second: bounds8_blowjob_texture0_layer0_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 889
+        width: 257
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d12f8a10a780a7b0800000000000000
+      internalID: -5215019246784929324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 888
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0aff6dab680c4470800000000000000
+      internalID: 8380082265193970186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_2
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 736
+        width: 268
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9693cd5b681d430800000000000000
+      internalID: 3805971275746732517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_3
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 736
+        width: 278
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5269075dc068e30800000000000000
+      internalID: 4505302588087215544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 482
+        width: 474
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6548c521294634f0800000000000000
+      internalID: -849411072996129428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_5
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 512
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c6156bd83773a80800000000000000
+      internalID: -8487187920270037930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_6
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 484
+        width: 470
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b73ed0e79ccf4b0800000000000000
+      internalID: -5405223909515363454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_7
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 483
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f325e6d220a4090800000000000000
+      internalID: -8049618989823672521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_8
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 482
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5715e64e06fbbc0800000000000000
+      internalID: -3765184229238803027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 525
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46724c88d487c1c0800000000000000
+      internalID: -4483468838423071153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_10
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 3
+        width: 268
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b03e95a0893a870800000000000000
+      internalID: 8692958875980335922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds8_blowjob_texture0_layer0_11
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 4
+        width: 255
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df9fd3fb6d5cf180800000000000000
+      internalID: -9080280030451359788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bounds8_blowjob_texture0_layer0_0: -5215019246784929324
+      bounds8_blowjob_texture0_layer0_1: 8380082265193970186
+      bounds8_blowjob_texture0_layer0_10: 8692958875980335922
+      bounds8_blowjob_texture0_layer0_11: -9080280030451359788
+      bounds8_blowjob_texture0_layer0_2: 3805971275746732517
+      bounds8_blowjob_texture0_layer0_3: 4505302588087215544
+      bounds8_blowjob_texture0_layer0_4: -849411072996129428
+      bounds8_blowjob_texture0_layer0_5: -8487187920270037930
+      bounds8_blowjob_texture0_layer0_6: -5405223909515363454
+      bounds8_blowjob_texture0_layer0_7: -8049618989823672521
+      bounds8_blowjob_texture0_layer0_8: -3765184229238803027
+      bounds8_blowjob_texture0_layer0_9: -4483468838423071153
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

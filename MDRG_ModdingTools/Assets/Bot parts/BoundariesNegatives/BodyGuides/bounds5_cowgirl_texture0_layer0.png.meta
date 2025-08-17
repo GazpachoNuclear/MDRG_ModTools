@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: c112247f012476c439f707c2c582ed7c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3718766384716064175
+    second: bounds5_cowgirl_texture0_layer0_0
+  - first:
+      213: -6540151054420631285
+    second: bounds5_cowgirl_texture0_layer0_1
+  - first:
+      213: 6296574930104727589
+    second: bounds5_cowgirl_texture0_layer0_2
+  - first:
+      213: -2721940165823285182
+    second: bounds5_cowgirl_texture0_layer0_3
+  - first:
+      213: 1317665566279917221
+    second: bounds5_cowgirl_texture0_layer0_4
+  - first:
+      213: -6996385078212133094
+    second: bounds5_cowgirl_texture0_layer0_5
+  - first:
+      213: -506421075617633341
+    second: bounds5_cowgirl_texture0_layer0_6
+  - first:
+      213: 4308427287141287075
+    second: bounds5_cowgirl_texture0_layer0_7
+  - first:
+      213: 8012260104752075094
+    second: bounds5_cowgirl_texture0_layer0_8
+  - first:
+      213: -1768513457270417918
+    second: bounds5_cowgirl_texture0_layer0_9
+  - first:
+      213: -6145605038476517068
+    second: bounds5_cowgirl_texture0_layer0_10
+  - first:
+      213: -1986148082284730195
+    second: bounds5_cowgirl_texture0_layer0_11
+  - first:
+      213: 8902027263455388065
+    second: bounds5_cowgirl_texture0_layer0_12
+  - first:
+      213: -5087773120353209663
+    second: bounds5_cowgirl_texture0_layer0_13
+  - first:
+      213: -2916669771109294388
+    second: bounds5_cowgirl_texture0_layer0_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1104
+        width: 238
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ad55c0da9446cc0800000000000000
+      internalID: -3718766384716064175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1104
+        width: 232
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01acd76447bc35a0800000000000000
+      internalID: -6540151054420631285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 897
+        width: 468
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528b58ac98de16750800000000000000
+      internalID: 6296574930104727589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_3
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1399
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2483c3437d9b93ad0800000000000000
+      internalID: -2721940165823285182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_4
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1399
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aed0eae9d9494210800000000000000
+      internalID: 1317665566279917221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_5
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1126
+        width: 237
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f725df6d8d7ee90800000000000000
+      internalID: -6996385078212133094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_6
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1125
+        width: 278
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb2a0107b4d8f8f0800000000000000
+      internalID: -506421075617633341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 587
+        width: 544
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a408a66acb9acb30800000000000000
+      internalID: 4308427287141287075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_8
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 897
+        width: 445
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65118cf4d14413f60800000000000000
+      internalID: 8012260104752075094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_9
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 383
+        width: 550
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20616ee616af477e0800000000000000
+      internalID: -1768513457270417918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_10
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 620
+        width: 277
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431a1cf37cc66baa0800000000000000
+      internalID: -6145605038476517068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 553
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8681c97d8cf64e0800000000000000
+      internalID: -1986148082284730195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_12
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 384
+        width: 328
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1e91391aa5a8b70800000000000000
+      internalID: 8902027263455388065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4
+        width: 711
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2f09f9d499469b0800000000000000
+      internalID: -5087773120353209663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds5_cowgirl_texture0_layer0_14
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 4
+        width: 237
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce19eddb48e587d0800000000000000
+      internalID: -2916669771109294388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bounds5_cowgirl_texture0_layer0_0: -3718766384716064175
+      bounds5_cowgirl_texture0_layer0_1: -6540151054420631285
+      bounds5_cowgirl_texture0_layer0_10: -6145605038476517068
+      bounds5_cowgirl_texture0_layer0_11: -1986148082284730195
+      bounds5_cowgirl_texture0_layer0_12: 8902027263455388065
+      bounds5_cowgirl_texture0_layer0_13: -5087773120353209663
+      bounds5_cowgirl_texture0_layer0_14: -2916669771109294388
+      bounds5_cowgirl_texture0_layer0_2: 6296574930104727589
+      bounds5_cowgirl_texture0_layer0_3: -2721940165823285182
+      bounds5_cowgirl_texture0_layer0_4: 1317665566279917221
+      bounds5_cowgirl_texture0_layer0_5: -6996385078212133094
+      bounds5_cowgirl_texture0_layer0_6: -506421075617633341
+      bounds5_cowgirl_texture0_layer0_7: 4308427287141287075
+      bounds5_cowgirl_texture0_layer0_8: 8012260104752075094
+      bounds5_cowgirl_texture0_layer0_9: -1768513457270417918
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: b127be291b272434fb7897250499f634
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6087892106929178755
+    second: bounds7_interaction_texture0_layer0_0
+  - first:
+      213: -1195383752383743105
+    second: bounds7_interaction_texture0_layer0_1
+  - first:
+      213: -4260451704036301317
+    second: bounds7_interaction_texture0_layer0_2
+  - first:
+      213: -8832043303482599579
+    second: bounds7_interaction_texture0_layer0_3
+  - first:
+      213: 4718041141244577319
+    second: bounds7_interaction_texture0_layer0_4
+  - first:
+      213: 108585350317583724
+    second: bounds7_interaction_texture0_layer0_5
+  - first:
+      213: 4992185251210104407
+    second: bounds7_interaction_texture0_layer0_6
+  - first:
+      213: -7309352048012701069
+    second: bounds7_interaction_texture0_layer0_7
+  - first:
+      213: 1963427944278119206
+    second: bounds7_interaction_texture0_layer0_8
+  - first:
+      213: 6019874677556522804
+    second: bounds7_interaction_texture0_layer0_9
+  - first:
+      213: 830615491320228872
+    second: bounds7_interaction_texture0_layer0_10
+  - first:
+      213: 3245850255733525189
+    second: bounds7_interaction_texture0_layer0_11
+  - first:
+      213: -5252041564822599239
+    second: bounds7_interaction_texture0_layer0_12
+  - first:
+      213: -5680661396188655870
+    second: bounds7_interaction_texture0_layer0_13
+  - first:
+      213: 8206400715208172523
+    second: bounds7_interaction_texture0_layer0_14
+  - first:
+      213: -1268183298472821554
+    second: bounds7_interaction_texture0_layer0_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1479
+        width: 252
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77f49f3266738ba0800000000000000
+      internalID: -6087892106929178755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1479
+        width: 252
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bb4e48fc4296fe0800000000000000
+      internalID: -1195383752383743105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_2
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1583
+        width: 328
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5653e7fb5dfd4c0800000000000000
+      internalID: -4260451704036301317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1423
+        width: 240
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5675d0fd8674e6580800000000000000
+      internalID: -8832043303482599579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_4
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1422
+        width: 238
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726cf83bb69d97140800000000000000
+      internalID: 4718041141244577319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_5
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1421
+        width: 260
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6dad710dc5c18100800000000000000
+      internalID: 108585350317583724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1083
+        width: 236
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e8257490ec74540800000000000000
+      internalID: 4992185251210104407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1083
+        width: 238
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372dde7f907ff8a90800000000000000
+      internalID: -7309352048012701069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_8
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 982
+        width: 430
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623d5c8005f7f3b10800000000000000
+      internalID: 1963427944278119206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_9
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 981
+        width: 490
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f2024ef14ea8350800000000000000
+      internalID: 6019874677556522804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_10
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 981
+        width: 260
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c24197360f68b00800000000000000
+      internalID: 830615491320228872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 601
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca8b1f3c939b0d20800000000000000
+      internalID: 3245850255733525189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_12
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 381
+        width: 430
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b98927f5000d17b0800000000000000
+      internalID: -5252041564822599239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_13
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 381
+        width: 528
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f86eebe8c3a21b0800000000000000
+      internalID: -5680661396188655870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_14
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 4
+        width: 685
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3ae7a98fdf2e170800000000000000
+      internalID: 8206400715208172523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds7_interaction_texture0_layer0_15
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 3
+        width: 349
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccb1785202866ee0800000000000000
+      internalID: -1268183298472821554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bounds7_interaction_texture0_layer0_0: -6087892106929178755
+      bounds7_interaction_texture0_layer0_1: -1195383752383743105
+      bounds7_interaction_texture0_layer0_10: 830615491320228872
+      bounds7_interaction_texture0_layer0_11: 3245850255733525189
+      bounds7_interaction_texture0_layer0_12: -5252041564822599239
+      bounds7_interaction_texture0_layer0_13: -5680661396188655870
+      bounds7_interaction_texture0_layer0_14: 8206400715208172523
+      bounds7_interaction_texture0_layer0_15: -1268183298472821554
+      bounds7_interaction_texture0_layer0_2: -4260451704036301317
+      bounds7_interaction_texture0_layer0_3: -8832043303482599579
+      bounds7_interaction_texture0_layer0_4: 4718041141244577319
+      bounds7_interaction_texture0_layer0_5: 108585350317583724
+      bounds7_interaction_texture0_layer0_6: 4992185251210104407
+      bounds7_interaction_texture0_layer0_7: -7309352048012701069
+      bounds7_interaction_texture0_layer0_8: 1963427944278119206
+      bounds7_interaction_texture0_layer0_9: 6019874677556522804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: e413c8031c03b264ca20e607de81c4a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1176418300923101382
+    second: bounds6_missionary_texture0_layer0_0
+  - first:
+      213: -5378388466262127615
+    second: bounds6_missionary_texture0_layer0_1
+  - first:
+      213: 2284333757663980182
+    second: bounds6_missionary_texture0_layer0_2
+  - first:
+      213: -4913972687659911686
+    second: bounds6_missionary_texture0_layer0_3
+  - first:
+      213: -1480639068936424038
+    second: bounds6_missionary_texture0_layer0_4
+  - first:
+      213: -5149685140245349090
+    second: bounds6_missionary_texture0_layer0_5
+  - first:
+      213: 6240895050583919070
+    second: bounds6_missionary_texture0_layer0_6
+  - first:
+      213: 7720477213844592372
+    second: bounds6_missionary_texture0_layer0_7
+  - first:
+      213: 4768955732410319503
+    second: bounds6_missionary_texture0_layer0_8
+  - first:
+      213: -6919559113051906954
+    second: bounds6_missionary_texture0_layer0_9
+  - first:
+      213: 8845691465281733479
+    second: bounds6_missionary_texture0_layer0_10
+  - first:
+      213: 316945672204184614
+    second: bounds6_missionary_texture0_layer0_11
+  - first:
+      213: -710462456607412475
+    second: bounds6_missionary_texture0_layer0_12
+  - first:
+      213: -6739189930795219388
+    second: bounds6_missionary_texture0_layer0_13
+  - first:
+      213: -6610371118983003671
+    second: bounds6_missionary_texture0_layer0_14
+  - first:
+      213: -6765305211794227045
+    second: bounds6_missionary_texture0_layer0_15
+  - first:
+      213: -2554615103887003267
+    second: bounds6_missionary_texture0_layer0_16
+  - first:
+      213: 8489608520174431220
+    second: bounds6_missionary_texture0_layer0_17
+  - first:
+      213: -6830963532523656280
+    second: bounds6_missionary_texture0_layer0_18
+  - first:
+      213: 1865584475117962134
+    second: bounds6_missionary_texture0_layer0_19
+  - first:
+      213: 8371548734654444265
+    second: bounds6_missionary_texture0_layer0_20
+  - first:
+      213: -5094878078155409760
+    second: bounds6_missionary_texture0_layer0_21
+  - first:
+      213: 1974431716741450712
+    second: bounds6_missionary_texture0_layer0_22
+  - first:
+      213: 6215224717265413260
+    second: bounds6_missionary_texture0_layer0_23
+  - first:
+      213: 1401146759173662866
+    second: bounds6_missionary_texture0_layer0_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1135
+        width: 187
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fb53ac9c58cafe0800000000000000
+      internalID: -1176418300923101382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1135
+        width: 183
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c43649f202c55b0800000000000000
+      internalID: -5378388466262127615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1200
+        width: 160
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69aaefd137593bf10800000000000000
+      internalID: 2284333757663980182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1055
+        width: 184
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af53f0c30ef0ecbb0800000000000000
+      internalID: -4913972687659911686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_4
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1037
+        width: 323
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95ba7f8c96b37be0800000000000000
+      internalID: -1480639068936424038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_5
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 1217
+        width: 82
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d719e26a4a888b0800000000000000
+      internalID: -5149685140245349090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 763
+        width: 346
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed94c8a9bfc1c9650800000000000000
+      internalID: 6240895050583919070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_7
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1056
+        width: 188
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f654b30f15a42b60800000000000000
+      internalID: 7720477213844592372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_8
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1038
+        width: 187
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8241ebb8fbbe2240800000000000000
+      internalID: 4768955732410319503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_9
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 671
+        width: 379
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c5938e5a9c8ff90800000000000000
+      internalID: -6919559113051906954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_10
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 672
+        width: 238
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76382dc658532ca70800000000000000
+      internalID: 8845691465281733479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_11
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 833
+        width: 226
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ce3dcd864066400800000000000000
+      internalID: 316945672204184614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 373
+        width: 393
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fe9afe82ee326f0800000000000000
+      internalID: -710462456607412475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_13
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 672
+        width: 257
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446cf05b6769972a0800000000000000
+      internalID: -6739189930795219388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_14
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 374
+        width: 383
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e144839d7e3344a0800000000000000
+      internalID: -6610371118983003671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_15
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 374
+        width: 338
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9008e501cecc12a0800000000000000
+      internalID: -6765305211794227045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_16
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 558
+        width: 91
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71b7f2191f2c8cd0800000000000000
+      internalID: -2554615103887003267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_17
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 373
+        width: 182
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb602f18f521d570800000000000000
+      internalID: 8489608520174431220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 531
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aba742fbda8331a0800000000000000
+      internalID: -6830963532523656280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_19
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 5
+        width: 266
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693c3e12233e3e910800000000000000
+      internalID: 1865584475117962134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_20
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 3
+        width: 326
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2f2f44837bd2470800000000000000
+      internalID: 8371548734654444265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_21
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 162
+        width: 92
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a63f99b16b5b49b0800000000000000
+      internalID: -5094878078155409760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_22
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 162
+        width: 96
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db83a57f27966b10800000000000000
+      internalID: 1974431716741450712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_23
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 10
+        width: 86
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8425df53f9e04650800000000000000
+      internalID: 6215224717265413260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bounds6_missionary_texture0_layer0_24
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 4
+        width: 96
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2986cbacd8fd17310800000000000000
+      internalID: 1401146759173662866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bounds6_missionary_texture0_layer0_0: -1176418300923101382
+      bounds6_missionary_texture0_layer0_1: -5378388466262127615
+      bounds6_missionary_texture0_layer0_10: 8845691465281733479
+      bounds6_missionary_texture0_layer0_11: 316945672204184614
+      bounds6_missionary_texture0_layer0_12: -710462456607412475
+      bounds6_missionary_texture0_layer0_13: -6739189930795219388
+      bounds6_missionary_texture0_layer0_14: -6610371118983003671
+      bounds6_missionary_texture0_layer0_15: -6765305211794227045
+      bounds6_missionary_texture0_layer0_16: -2554615103887003267
+      bounds6_missionary_texture0_layer0_17: 8489608520174431220
+      bounds6_missionary_texture0_layer0_18: -6830963532523656280
+      bounds6_missionary_texture0_layer0_19: 1865584475117962134
+      bounds6_missionary_texture0_layer0_2: 2284333757663980182
+      bounds6_missionary_texture0_layer0_20: 8371548734654444265
+      bounds6_missionary_texture0_layer0_21: -5094878078155409760
+      bounds6_missionary_texture0_layer0_22: 1974431716741450712
+      bounds6_missionary_texture0_layer0_23: 6215224717265413260
+      bounds6_missionary_texture0_layer0_24: 1401146759173662866
+      bounds6_missionary_texture0_layer0_3: -4913972687659911686
+      bounds6_missionary_texture0_layer0_4: -1480639068936424038
+      bounds6_missionary_texture0_layer0_5: -5149685140245349090
+      bounds6_missionary_texture0_layer0_6: 6240895050583919070
+      bounds6_missionary_texture0_layer0_7: 7720477213844592372
+      bounds6_missionary_texture0_layer0_8: 4768955732410319503
+      bounds6_missionary_texture0_layer0_9: -6919559113051906954
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,11 +8,4 @@ public class PM_InputElement : MonoBehaviour
     public Toggle hasAnswer;
     public TMP_InputField lines;
     public TMP_InputField answers;
-    
-    
-    public void toogleAnswersPanel()
-    {
-        answers.gameObject.SetActive(!answers.gameObject.activeSelf);
-    }
-
 }

@@ -55,10 +55,10 @@ public class Export : MonoBehaviour
 
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/mod.json"))
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json"))
             {
                 sw.WriteLine(JSON);
-                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/mod.json\n &\n";
+                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json\n &\n";
             }
         }
         else
@@ -122,15 +122,27 @@ public class Export : MonoBehaviour
         {
             for(int j=0; j<content[i].transform.childCount; j++)
             {
-                if (!content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().hasAnswer.isOn)
+                //If the "You" section is not meant to be an answer for the specific block, and there is text in both sections (Bot and You):
+                if (!content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().hasAnswer.isOn && !string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text) && !string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text))
                 {
-                    LUA += "personality.PrepareContainer('" + CleanNextLines(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text) + "').AddBranch(StoryBotDialogueBranch.__new('#r" + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text, "Bot") + "', CurrentModGuid," + count.ToString() + "))\n";
+                    LUA += "personality.PrepareContainer('" + CleanNextLines(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text) + "').AddBranch(StoryBotDialogueBranch.__new('#r" + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text, "Bot") + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text, "You") + "', CurrentModGuid," + count.ToString() + "))\n";
                 }
-                else if (content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().hasAnswer.isOn)
+                //If "You" is meant to be used as an answer on the specific block, there is text in both sections (Bot and You):
+                else if (content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().hasAnswer.isOn && !string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text) && !string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text))
                 {
                     LUA += "personality.PrepareContainer('" + CleanNextLines(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text) + "').AddBranch(StoryBotDialogueBranch.__new('#r" + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text, "Bot") + "\\n#end\\n#r" + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text, "You") + "', CurrentModGuid," + count.ToString() + "))\n";
                 }
-                
+                //There is only text on "Bot" (answer toogle is ignored):
+                else if (!string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text) && string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text))
+                {
+                    LUA += "personality.PrepareContainer('" + CleanNextLines(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text) + "').AddBranch(StoryBotDialogueBranch.__new('#r" + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text, "Bot") + "', CurrentModGuid," + count.ToString() + "))\n";
+                }
+                //There is only text on "You" (answer toogle is ignored):
+                else if (string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text) && !string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text))
+                {
+                    LUA += "personality.PrepareContainer('" + CleanNextLines(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text) + "').AddBranch(StoryBotDialogueBranch.__new('#r" + ParseLuaSegment(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text, "You") + "', CurrentModGuid," + count.ToString() + "))\n";
+                }
+                //If none of the conditions are met, it means there is no text on the block, so it is ignored.
             }
         }
 

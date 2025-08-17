@@ -1,0 +1,1 @@
+D:\factorial-omega-win-64\ModTools\github\MDRG_ModTools\MDRG_ModdingTools\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\1o11s1u2\obj\arm64-v8a
