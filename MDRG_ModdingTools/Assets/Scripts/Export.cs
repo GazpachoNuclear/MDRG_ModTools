@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using System.IO.Compression;
 using System;
 using TMPro;
 using UnityEngine.UI;
@@ -7,7 +8,6 @@ using UnityEngine.UI;
 public class Export : MonoBehaviour
 {
 
-    private string JSON;
     private string LUA;
     private int count;
 
@@ -18,6 +18,40 @@ public class Export : MonoBehaviour
 
     private Guid guid;
 
+
+    //For JSON parsing:
+    [System.Serializable]
+    public class onStart
+    {
+        public string[] luaFiles;
+    }
+
+    [System.Serializable]
+    public class GUID
+    {
+        public string serializedGuid;
+    }
+
+    [System.Serializable]
+    public class doNotChange
+    {
+        public long timeCreated;
+        public GUID guid;
+    }
+
+    [System.Serializable]
+    public class JSONstructure
+    {
+        public string name;
+        public string description;
+        public onStart OnGameStart;
+        public string targetVersion;
+        public doNotChange doNotChangeVariablesBelowThis;
+    }
+
+    public JSONstructure JSON;
+
+
     //Launches the main functions
     public void ExportMod()
     {
@@ -27,44 +61,46 @@ public class Export : MonoBehaviour
 
         path.text = "";
 
+        //Create a folder
+        if (SystemInfo.operatingSystem.Contains("Windows"))
+        {
+            var folder = Directory.CreateDirectory(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text));
+        }
+        else
+        {
+            var folder = Directory.CreateDirectory(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text));
+        }
+
         createJSON();
         createLUA();
+        CompressFiles();
         popUp.SetActive(true);
     }
 
     //Parses all information to the JSON file
     private void createJSON()
     {
-        JSON = "";
-        JSON = "{\n" +
-        "\"name\": \"" + content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text + "\",\n" +
-        "\"description\": \"" + content[0].transform.GetChild(1).GetComponentInChildren<TMP_InputField>().text + "\",\n" +
-        "\"OnGameStart\": {\n" +
-                            "\"luaFiles\": [\n" +
-                    "\"" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua\"\n" +
-            "]\n" +
-        "},\n" +
-        "\"targetVersion\": \"0.90.15\"\n," +
-        "\"doNotChangeVariablesBelowThis\": {\n" +
-                "\"timeCreated\": 638842586268180000,\n" +
-            "\"guid\": {\n" +
-                    "\"serializedGuid\": \"" + guid.ToString() + "\"\n" +
-            "}\n" +
-        "}\n" +
-        "}";
+        JSON.name = content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text;
+        JSON.description = ScapeText(content[0].transform.GetChild(1).GetComponentInChildren<TMP_InputField>().text);
+        JSON.OnGameStart.luaFiles = new string[1];
+        JSON.OnGameStart.luaFiles[0] = "script.lua";
+        JSON.targetVersion = "0.90.15";
+        JSON.doNotChangeVariablesBelowThis.timeCreated = 638842586268180000;
+        JSON.doNotChangeVariablesBelowThis.guid.serializedGuid = guid.ToString();
 
+        string json = JsonUtility.ToJson(JSON, true);
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json"))
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json"))
             {
-                sw.WriteLine(JSON);
-                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json\n &\n";
+                sw.WriteLine(json);
+                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json\n &\n";
             }
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json", JSON);
-            path.text += Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".json\n &\n";
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json", json);
+            path.text += Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json\n &\n";
         }
     }
 
@@ -153,16 +189,16 @@ public class Export : MonoBehaviour
 
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua"))
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua"))
             {
                 sw.WriteLine(LUA);
-                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua";
+                path.text += System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
             }
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua", LUA);
-            path.text += Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + ".lua";
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua", LUA);
+            path.text += Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
         }
     }
 
@@ -206,5 +242,40 @@ public class Export : MonoBehaviour
         raw = raw.Replace("*", "");
         raw = raw.Replace(" ", "_");
         return raw;
+    }
+
+    private void CompressFiles()
+    {
+        string filePath1;
+        string filePath2;
+
+        string zipPath;
+
+        if (SystemInfo.operatingSystem.Contains("Windows"))
+        {
+            filePath1 = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json";
+            filePath2 = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
+            zipPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip";
+        }
+        else
+        {
+            filePath1 = Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json";
+            filePath2 = Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
+            zipPath = Application.persistentDataPath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip";
+        }
+
+        using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Create))
+        {
+            using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Create))
+            {
+                // Agregar primer archivo
+                string entryName1 = Path.GetFileName(filePath1);
+                archive.CreateEntryFromFile(filePath1, entryName1);
+
+                // Agregar segundo archivo
+                string entryName2 = Path.GetFileName(filePath2);
+                archive.CreateEntryFromFile(filePath2, entryName2);
+            }
+        }
     }
 }
