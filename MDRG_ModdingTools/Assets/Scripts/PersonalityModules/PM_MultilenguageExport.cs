@@ -2,6 +2,9 @@ using UnityEngine;
 using System.IO;
 using System.IO.Compression;
 using System;
+using SimpleFileBrowser;
+using TMPro;
+using UnityEditor;
 
 public class PM_MultilenguageExport : MonoBehaviour
 {
@@ -12,7 +15,9 @@ public class PM_MultilenguageExport : MonoBehaviour
 
     private Guid guid;
 
-    public TextAsset staticData;
+    private string staticData;
+
+    public TMP_Text loadedCSV;
 
     [System.Serializable]
     public class structuredDataRow
@@ -61,16 +66,22 @@ public class PM_MultilenguageExport : MonoBehaviour
 
     public JSONstructure JSON;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+
+    public void OpenFileBrowser()
     {
-        readCSV();
+        FileBrowser.SetFilters(true, new FileBrowser.Filter("translation file", ".csv"));
+        FileBrowser.SetDefaultFilter(".csv");
+        FileBrowser.SetExcludedExtensions(".lnk", ".tmp", ".zip", ".rar", ".exe", ".json", ".lua", ".ods" , ".xlsx");
+        FileBrowser.AddQuickLink("Users", "C:\\Users", null);
+        FileBrowser.ShowLoadDialog((paths) => { readCSV(paths[0]); }, () => { Debug.Log("Canceled"); }, FileBrowser.PickMode.Files, false, null, null, "Select Translations File", "Select");
     }
 
 
-    void readCSV()
+    void readCSV(string path)
     {
-        string[] totalRows = staticData.text.Split("***END***");
+        staticData = System.IO.File.ReadAllText(path);
+
+        string[] totalRows = staticData.Split("***END***");
         int numColumns = totalRows[0].Split("|").Length;
 
         myStructuredData.rows = new structuredDataRow[totalRows.Length];
@@ -87,6 +98,8 @@ public class PM_MultilenguageExport : MonoBehaviour
                 myStructuredData.rows[i].parameter[j] = totalRows[i].Split("|")[j];
             }
         }
+
+        loadedCSV.text = path;
     }
 
 
@@ -103,7 +116,7 @@ public class PM_MultilenguageExport : MonoBehaviour
         }
 
         //Iterate to all lenguages
-        for (int i=3; i<myStructuredData.rows[0].parameter.Length-1; i++) //Column index for the lenguage
+        for (int i = 3; i < myStructuredData.rows[0].parameter.Length - 1; i++) //Column index for the lenguage
         {
             guid = Guid.NewGuid();
 
@@ -124,6 +137,7 @@ public class PM_MultilenguageExport : MonoBehaviour
             CompressFiles(i);
         }
     }
+
 
     //Parses all information to the JSON file
     private void createJSON(int lenguage)
@@ -308,6 +322,19 @@ public class PM_MultilenguageExport : MonoBehaviour
                 string entryName2 = Path.GetFileName(filePath2);
                 archive.CreateEntryFromFile(filePath2, entryName2);
             }
+        }
+    }
+
+    public void CopyTranslationTemplate()
+    {
+
+        if (SystemInfo.operatingSystem.Contains("Windows"))
+        {
+            File.Copy(Application.dataPath + "/Resources/TranslationsVolumeII_guidance.ods", System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/TranslationTemplateExample.ods");
+        }
+        else
+        {
+            File.Copy(Application.dataPath + "/Resources/TranslationsVolumeII_guidance.ods", Application.persistentDataPath + " /TranslationTemplateExample.ods");
         }
     }
 }
