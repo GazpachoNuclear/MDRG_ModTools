@@ -5,6 +5,7 @@ using System;
 using SimpleFileBrowser;
 using TMPro;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class PM_MultilenguageExport : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PM_MultilenguageExport : MonoBehaviour
     private Guid guid;
 
     private string staticData;
+
+    public GameObject[] content;
 
     public TMP_Text loadedCSV;
 
@@ -327,14 +330,113 @@ public class PM_MultilenguageExport : MonoBehaviour
 
     public void CopyTranslationTemplate()
     {
+        Application.OpenURL("https://drive.google.com/drive/folders/1TS5ZKvJfehe_3M03BtViK9b6TkRhLLj6?usp=sharing");
 
-        if (SystemInfo.operatingSystem.Contains("Windows"))
+
+        //Let's prepare the data for copy-paste on the template
+        string triggers = "";
+        string speakers = "";
+        string isAnswer = "";
+        string rawLines = "";
+
+        triggers += "Name\nMod_description\nDescription\nPrice\nIsIllegal\nStore\n";
+        speakers += "\n\n\n\n\n\n";
+        isAnswer += "\n\n\n\n\n\n";
+        rawLines += content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text + "\n";
+        rawLines += content[0].transform.GetChild(1).GetComponentInChildren<TMP_InputField>().text + "\n";
+        rawLines += content[0].transform.GetChild(1).GetComponentInChildren<TMP_InputField>().text + "\n";
+        rawLines += (content[0].transform.GetChild(2).GetComponentInChildren<TMP_InputField>().text).ToString() + "\n";
+        if (content[0].transform.GetChild(3).GetComponentInChildren<Toggle>().isOn)
         {
-            File.Copy(Application.dataPath + "/Resources/TranslationsVolumeII_guidance.ods", System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/TranslationTemplateExample.ods");
+            rawLines += "true\n";
         }
         else
         {
-            File.Copy(Application.dataPath + "/Resources/TranslationsVolumeII_guidance.ods", Application.persistentDataPath + " /TranslationTemplateExample.ods");
+            rawLines += "false\n";
         }
+        switch (content[0].transform.GetChild(3).GetComponentInChildren<TMP_Dropdown>().value)
+        {
+            case 0:
+                rawLines += "ladyparts.ic\n";
+                break;
+            case 1:
+                rawLines += "clothier\n";
+                break;
+            case 2:
+                rawLines += "pharmacy\n";
+                break;
+            case 3:
+                rawLines += "grocery\n";
+                break;
+        }
+
+        for (int i = 1; i < content.Length; i++)
+        {
+            for (int j = 0; j < content[i].transform.childCount; j++)
+            {
+                if (!string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text) || !string.IsNullOrEmpty(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text))
+                {
+                    //For Bot:
+                    triggers += "***" + content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text + "***" + "\n";
+                    speakers += "Bot\n";
+                    if (content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().hasAnswer.isOn)
+                    {
+                        isAnswer += "Y\n";
+                    }
+                    else
+                    {
+                        isAnswer += "N\n";
+                    }
+                    rawLines += ParseForTranslationSheet(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().lines.text);
+
+                    //For you:
+                    triggers += "***" + content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().trigger.text + "***" + "\n";
+                    speakers += "You\n";
+                    if (content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().hasAnswer.isOn)
+                    {
+                        isAnswer += "Y\n";
+                    }
+                    else
+                    {
+                        isAnswer += "N\n";
+                    }
+                    rawLines += ParseForTranslationSheet(content[i].transform.GetChild(j).GetComponentInChildren<PM_InputElement>().answers.text);
+                }
+            }
+        }
+
+        if (SystemInfo.operatingSystem.Contains("Windows"))
+        {
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/triggersColumn.txt"))
+            {
+                sw.WriteLine(triggers);
+            }
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/speakerColumn.txt"))
+            {
+                sw.WriteLine(speakers);
+            }
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/answerColumn.txt"))
+            {
+                sw.WriteLine(isAnswer);
+            }
+            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/linesColumn.txt"))
+            {
+                sw.WriteLine(rawLines);
+            }
+        }
+        else
+        {
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/triggersColumn.txt", triggers);
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/speakerColumn.txt", speakers);
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/answerColumn.txt", isAnswer);
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/linesColumn.txt", rawLines);
+        }
+    }
+
+
+    private string ParseForTranslationSheet(string raw)
+    {
+        raw.Replace("\n", "***");
+        return raw;
     }
 }
