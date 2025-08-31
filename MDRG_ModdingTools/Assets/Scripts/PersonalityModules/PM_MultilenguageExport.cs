@@ -16,7 +16,11 @@ public class PM_MultilenguageExport : MonoBehaviour
 
     private Guid guid;
 
+    private string savePath;
     private string staticData;
+
+    public GameObject popUp;
+    public TMP_Text path;
 
     public GameObject[] content;
 
@@ -106,17 +110,18 @@ public class PM_MultilenguageExport : MonoBehaviour
     }
 
 
+    public void OpenSaveFileBrowser()
+    {
+        FileBrowser.AddQuickLink("Users", "C:\\Users", null);
+        FileBrowser.ShowSaveDialog((paths) => { savePath = paths[0]; ExportMultilenguage(); }, () => { Debug.Log("Canceled"); }, FileBrowser.PickMode.Folders, false, null, null, "Select Save Folder", "Select");
+    }
+
+
     public void ExportMultilenguage()
     {
         //Create a general folder
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            var folder = Directory.CreateDirectory(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations");
-        }
-        else
-        {
-            var folder = Directory.CreateDirectory(Application.persistentDataPath + "/MachineTranslations");
-        }
+        var folder = Directory.CreateDirectory(savePath + "/MachineTranslations");
+        
 
         //Iterate to all lenguages
         for (int i = 3; i < myStructuredData.rows[0].parameter.Length - 1; i++) //Column index for the lenguage
@@ -126,19 +131,16 @@ public class PM_MultilenguageExport : MonoBehaviour
             count = 0;
 
             //Create a folder for lenguage specific
-            if (SystemInfo.operatingSystem.Contains("Windows"))
-            {
-                var folder = Directory.CreateDirectory(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i]);
-            }
-            else
-            {
-                var folder = Directory.CreateDirectory(Application.persistentDataPath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i]);
-            }
+            var folder2 = Directory.CreateDirectory(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i]);
+
 
             createJSON(i);
             createLUA(i);
             CompressFiles(i);
         }
+
+        path.text = savePath + "/MachineTranslations";
+        popUp.SetActive(true);
     }
 
 
@@ -156,14 +158,14 @@ public class PM_MultilenguageExport : MonoBehaviour
         string json = JsonUtility.ToJson(JSON, true);
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json"))
+            using (StreamWriter sw = File.CreateText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json"))
             {
                 sw.WriteLine(json);
             }
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json", json);
+            System.IO.File.WriteAllText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json", json);
         }
     }
 
@@ -235,14 +237,14 @@ public class PM_MultilenguageExport : MonoBehaviour
 
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua"))
+            using (StreamWriter sw = File.CreateText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua"))
             {
                 sw.WriteLine(LUA);
             }
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua", LUA);
+            System.IO.File.WriteAllText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua", LUA);
         }
     }
 
@@ -302,15 +304,15 @@ public class PM_MultilenguageExport : MonoBehaviour
 
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            filePath1 = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json";
-            filePath2 = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua";
-            zipPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.zip";
+            filePath1 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json";
+            filePath2 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua";
+            zipPath = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.zip";
         }
         else
         {
-            filePath1 = Application.persistentDataPath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json";
-            filePath2 = Application.persistentDataPath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua";
-            zipPath = Application.persistentDataPath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.zip";
+            filePath1 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json";
+            filePath2 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua";
+            zipPath = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.zip";
         }
 
         using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Create))
@@ -405,31 +407,36 @@ public class PM_MultilenguageExport : MonoBehaviour
             }
         }
 
+        if (string.IsNullOrEmpty(savePath))
+        {
+            savePath = Application.persistentDataPath;  //Generic, in case the user is not triggering a save previous some commands.
+        }
+
         if (SystemInfo.operatingSystem.Contains("Windows"))
         {
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/triggersColumn.txt"))
+            using (StreamWriter sw = File.CreateText(savePath + "/triggersColumn.txt"))
             {
                 sw.WriteLine(triggers);
             }
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/speakerColumn.txt"))
+            using (StreamWriter sw = File.CreateText(savePath + "/speakerColumn.txt"))
             {
                 sw.WriteLine(speakers);
             }
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/answerColumn.txt"))
+            using (StreamWriter sw = File.CreateText(savePath + "/answerColumn.txt"))
             {
                 sw.WriteLine(isAnswer);
             }
-            using (StreamWriter sw = File.CreateText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/linesColumn.txt"))
+            using (StreamWriter sw = File.CreateText(savePath + "/linesColumn.txt"))
             {
                 sw.WriteLine(rawLines);
             }
         }
         else
         {
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/triggersColumn.txt", triggers);
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/speakerColumn.txt", speakers);
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/answerColumn.txt", isAnswer);
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/linesColumn.txt", rawLines);
+            System.IO.File.WriteAllText(savePath + "/triggersColumn.txt", triggers);
+            System.IO.File.WriteAllText(savePath + "/speakerColumn.txt", speakers);
+            System.IO.File.WriteAllText(savePath + "/answerColumn.txt", isAnswer);
+            System.IO.File.WriteAllText(savePath + "/linesColumn.txt", rawLines);
         }
     }
 
