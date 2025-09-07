@@ -21,6 +21,7 @@ public class PM_Export : MonoBehaviour
     private string savePath;
 
     private Guid guid;
+    private long tick;
 
 
     //For JSON parsing:
@@ -69,6 +70,9 @@ public class PM_Export : MonoBehaviour
     {
         guid = Guid.NewGuid();
 
+        DateTime now = DateTime.Now;
+        tick = now.Ticks;
+
         count = 0;
 
         path.text = "";
@@ -96,7 +100,7 @@ public class PM_Export : MonoBehaviour
         JSON.OnGameStart.luaFiles = new string[1];
         JSON.OnGameStart.luaFiles[0] = "script.lua";
         JSON.targetVersion = "0.90.15";
-        JSON.doNotChangeVariablesBelowThis.timeCreated = 638842586268180000;
+        JSON.doNotChangeVariablesBelowThis.timeCreated = tick;
         JSON.doNotChangeVariablesBelowThis.guid.serializedGuid = guid.ToString();
 
         string json = JsonUtility.ToJson(JSON, true);

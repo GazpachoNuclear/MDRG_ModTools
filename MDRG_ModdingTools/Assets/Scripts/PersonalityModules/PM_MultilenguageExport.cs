@@ -13,6 +13,7 @@ public class PM_MultilenguageExport : MonoBehaviour
     private int count;
 
     private Guid guid;
+    private long tick;
 
     private string savePath;
     private string staticData;
@@ -128,6 +129,9 @@ public class PM_MultilenguageExport : MonoBehaviour
         {
             guid = Guid.NewGuid();
 
+            DateTime now = DateTime.Now;
+            tick = now.Ticks;
+
             count = 0;
 
             //Create a folder for lenguage specific
@@ -155,7 +159,7 @@ public class PM_MultilenguageExport : MonoBehaviour
         JSON.OnGameStart.luaFiles = new string[1];
         JSON.OnGameStart.luaFiles[0] = "script.lua";
         JSON.targetVersion = "0.90.15";
-        JSON.doNotChangeVariablesBelowThis.timeCreated = 638842586268180000;
+        JSON.doNotChangeVariablesBelowThis.timeCreated = tick;
         JSON.doNotChangeVariablesBelowThis.guid.serializedGuid = guid.ToString();
 
         string json = JsonUtility.ToJson(JSON, true);

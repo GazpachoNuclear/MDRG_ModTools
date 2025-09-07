@@ -276,8 +276,8 @@ MonoBehaviour:
     y: 0
     width: 449
     height: 941
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b08a0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 08fbffff
       m_RenameOverlay:
@@ -1275,9 +1275,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92b90000
-    m_LastClickedID: 47506
-    m_ExpandedIDs: 0000000010b9000012b900008ab9000000ca9a3b
+    m_SelectedIDs: 94b90000
+    m_LastClickedID: 47508
+    m_ExpandedIDs: 0000000016b9000018b900008cb9000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1306,7 +1306,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000010b9000012b90000
+    m_ExpandedIDs: 0000000016b9000018b90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1338,18 +1338,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000ce870000185d00007c5d0000e05c0000626100000c6200002662000000000000726900003863000006630000f4b0000002be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PersonalityModules
-      m_OriginalName: PersonalityModules
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 47506
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
