@@ -1,10 +1,8 @@
 using UnityEngine;
 using System.IO;
-using System.IO.Compression;
 using System;
 using SimpleFileBrowser;
 using TMPro;
-using UnityEditor;
 using UnityEngine.UI;
 
 public class PM_MultilenguageExport : MonoBehaviour
@@ -18,6 +16,8 @@ public class PM_MultilenguageExport : MonoBehaviour
 
     private string savePath;
     private string staticData;
+
+    public Export exportManager;
 
     public GameObject popUp;
     public TMP_Text path;
@@ -136,7 +136,10 @@ public class PM_MultilenguageExport : MonoBehaviour
 
             createJSON(i);
             createLUA(i);
-            CompressFiles(i);
+            string[] filePaths = new string[2];
+            filePaths[0] = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "mod.json";
+            filePaths[1] = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "script.lua";
+            exportManager.ExportCompressedMod(filePaths, savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "mod.zip");
         }
 
         path.text = savePath + "/MachineTranslations";
@@ -156,18 +159,9 @@ public class PM_MultilenguageExport : MonoBehaviour
         JSON.doNotChangeVariablesBelowThis.guid.serializedGuid = guid.ToString();
 
         string json = JsonUtility.ToJson(JSON, true);
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            using (StreamWriter sw = File.CreateText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json"))
-            {
-                sw.WriteLine(json);
-            }
-        }
-        else
-        {
-            System.IO.File.WriteAllText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json", json);
-        }
+        exportManager.ExportFile(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json", json);
     }
+
 
     //Parses all information to the LUA file
     private void createLUA(int lenguage)
@@ -234,18 +228,7 @@ public class PM_MultilenguageExport : MonoBehaviour
             "itemprefab0.TurnIntoPersonalityModule(itemgameid0, personality)\n\n" +
             "end";
 
-
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            using (StreamWriter sw = File.CreateText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua"))
-            {
-                sw.WriteLine(LUA);
-            }
-        }
-        else
-        {
-            System.IO.File.WriteAllText(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua", LUA);
-        }
+        exportManager.ExportFile(savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua", LUA);
     }
 
     //Per each LUA entry (character line), the script parses it and sets it in a single scaped line
@@ -295,40 +278,6 @@ public class PM_MultilenguageExport : MonoBehaviour
         return raw;
     }
 
-    private void CompressFiles(int lenguage)
-    {
-        string filePath1;
-        string filePath2;
-
-        string zipPath;
-
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            filePath1 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json";
-            filePath2 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua";
-            zipPath = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.zip";
-        }
-        else
-        {
-            filePath1 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.json";
-            filePath2 = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "script.lua";
-            zipPath = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[lenguage] + "/" + "mod.zip";
-        }
-
-        using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Create))
-        {
-            using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Create))
-            {
-                // Agregar primer archivo
-                string entryName1 = Path.GetFileName(filePath1);
-                archive.CreateEntryFromFile(filePath1, entryName1);
-
-                // Agregar segundo archivo
-                string entryName2 = Path.GetFileName(filePath2);
-                archive.CreateEntryFromFile(filePath2, entryName2);
-            }
-        }
-    }
 
     public void CopyTranslationTemplate()
     {

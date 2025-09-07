@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.IO;
-using System.IO.Compression;
 using System;
 using TMPro;
 using UnityEngine.UI;
@@ -16,6 +15,8 @@ public class PM_Export : MonoBehaviour
 
     public GameObject popUp;
     public TMP_Text path;
+
+    public Export exportManager;
 
     private string savePath;
 
@@ -78,7 +79,10 @@ public class PM_Export : MonoBehaviour
 
         createJSON();
         createLUA();
-        CompressFiles();
+        string[] filePaths = new string[2];
+        filePaths[0] = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json";
+        filePaths[1] = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
+        exportManager.ExportCompressedMod(filePaths, savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip");
 
         path.text = savePath;
         popUp.SetActive(true);
@@ -96,17 +100,7 @@ public class PM_Export : MonoBehaviour
         JSON.doNotChangeVariablesBelowThis.guid.serializedGuid = guid.ToString();
 
         string json = JsonUtility.ToJson(JSON, true);
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            using (StreamWriter sw = File.CreateText(savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json"))
-            {
-                sw.WriteLine(json);
-            }
-        }
-        else
-        {
-            System.IO.File.WriteAllText(savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json", json);
-        }
+        exportManager.ExportFile(savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json", json);
     }
 
     //Parses all information to the LUA file
@@ -191,18 +185,7 @@ public class PM_Export : MonoBehaviour
             "itemprefab0.TurnIntoPersonalityModule(itemgameid0, personality)\n\n" +
             "end";
 
-
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            using (StreamWriter sw = File.CreateText(savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua"))
-            {
-                sw.WriteLine(LUA);
-            }
-        }
-        else
-        {
-            System.IO.File.WriteAllText(savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua", LUA);
-        }
+        exportManager.ExportFile(savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua", LUA);
     }
 
     //Per each LUA entry (character line), the script parses it and sets it in a single scaped line
@@ -247,38 +230,4 @@ public class PM_Export : MonoBehaviour
         return raw;
     }
 
-    private void CompressFiles()
-    {
-        string filePath1;
-        string filePath2;
-
-        string zipPath;
-
-        if (SystemInfo.operatingSystem.Contains("Windows"))
-        {
-            filePath1 = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json";
-            filePath2 = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
-            zipPath = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip";
-        }
-        else
-        {
-            filePath1 = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json";
-            filePath2 = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
-            zipPath = savePath + "/" + CleanName(content[0].transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip";
-        }
-
-        using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Create))
-        {
-            using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Create))
-            {
-                // Agregar primer archivo
-                string entryName1 = Path.GetFileName(filePath1);
-                archive.CreateEntryFromFile(filePath1, entryName1);
-
-                // Agregar segundo archivo
-                string entryName2 = Path.GetFileName(filePath2);
-                archive.CreateEntryFromFile(filePath2, entryName2);
-            }
-        }
-    }
 }

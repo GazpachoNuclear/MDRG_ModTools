@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 11731020}
   - component: {fileID: 11731019}
+  - component: {fileID: 11731021}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -178,6 +179,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11731021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11731018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa0c89889cdea947927df982c5c5a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &28922222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19810,6 +19823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a51254e3ac0294baca21139bb1766d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exportManager: {fileID: 11731021}
   popUp: {fileID: 766548862}
   path: {fileID: 1143631120}
   content:
@@ -19884,6 +19898,7 @@ MonoBehaviour:
   - {fileID: 1950573868}
   popUp: {fileID: 766548862}
   path: {fileID: 1143631120}
+  exportManager: {fileID: 11731021}
   JSON:
     name: 
     description: 
