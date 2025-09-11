@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 39
+  controlID: 100
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 337
     height: 552
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 1134
     height: 552
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -425,7 +425,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 08fbffff
+      m_ExpandedIDs: bcdafeffcedafeff1a0fffff801bffff921bffffde4fffff08fbffffdcb10000dcb30000e2b50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1015,9 +1015,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.6070821, y: 0.038332164, z: -0.95517695}
+    m_Target: {x: 0.051754177, y: -0.6819507, z: -1.0375262}
     speed: 2
-    m_Value: {x: 0.6070821, y: 0.038332164, z: -0.95517695}
+    m_Value: {x: 0.051754177, y: -0.6819507, z: -1.0375262}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1067,9 +1067,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.7645307
+    m_Target: 7.5033226
     speed: 2
-    m_Value: 3.7645307
+    m_Value: 7.5033226
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1258,7 +1258,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/PersonalityModules
+    - Assets/Prefab/Usable Items
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1268,16 +1268,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/Scripts/PersonalityModules
+  - Assets/Prefab/Usable Items
   m_LastFoldersGridSize: 53
   m_LastProjectPath: D:\factorial-omega-win-64\ModTools\github\MDRG_ModTools\MDRG_ModdingTools
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 94b90000
-    m_LastClickedID: 47508
-    m_ExpandedIDs: 0000000016b9000018b900008cb9000000ca9a3b
+    m_SelectedIDs: 16bf0000
+    m_LastClickedID: 48918
+    m_ExpandedIDs: 0000000078be00007abe0000e8be0000eebe000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1306,7 +1306,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000016b9000018b90000
+    m_ExpandedIDs: 0000000078be00007abe0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1422,9 +1422,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 651
-    width: 1469
-    height: 343
+    y: 631
+    width: 1470
+    height: 363
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1438,7 +1438,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 45396
+  m_LastSelectedObjectID: 68930
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
