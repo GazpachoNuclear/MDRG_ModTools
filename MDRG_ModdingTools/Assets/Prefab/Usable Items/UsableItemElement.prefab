@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ladyparts.ic
+  m_text: grocery
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3017,7 +3017,7 @@ MonoBehaviour:
   m_Placeholder: {fileID: 0}
   m_ItemText: {fileID: 2089469131752777968}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 3
   m_MultiSelect: 0
   m_Options:
     m_Options:

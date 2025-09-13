@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 21090437}
   - component: {fileID: 21090438}
   - component: {fileID: 21090439}
+  - component: {fileID: 21090440}
   m_Layer: 5
   m_Name: UsabIetemsEditor
   m_TagString: Untagged
@@ -270,6 +271,20 @@ MonoBehaviour:
       timeCreated: 0
       guid:
         serializedGuid: 
+--- !u!114 &21090440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21090436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315f655f2b9c0d14bb00b57be4cc7ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5843585710087552302, guid: 68f454e8be65ada4387e37ff7dd6dce5, type: 3}
+  content: {fileID: 1643469896}
 --- !u!1 &24874273
 GameObject:
   m_ObjectHideFlags: 0
@@ -6760,7 +6775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 637.50006, y: 0}
+  m_AnchoredPosition: {x: 637.5001, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &549277852
@@ -19065,7 +19080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 462.50006, y: 0}
+  m_AnchoredPosition: {x: 462.50012, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1330942838
@@ -29303,7 +29318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 862.50006, y: -50}
+  m_AnchoredPosition: {x: 862.5001, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1990264763
@@ -29956,7 +29971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2013491117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30020,7 +30035,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2013491119}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 21090440}
+        m_TargetAssemblyTypeName: ITEM_Import, Assembly-CSharp
+        m_MethodName: OpenFileBrowser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2013491119
 MonoBehaviour:
   m_ObjectHideFlags: 0
