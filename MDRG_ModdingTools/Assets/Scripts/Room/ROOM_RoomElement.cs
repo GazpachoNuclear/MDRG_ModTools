@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using SimpleFileBrowser;
 
 public class ROOM_RoomElement : MonoBehaviour
 {
@@ -14,5 +15,14 @@ public class ROOM_RoomElement : MonoBehaviour
     public void DeleteButton()
     {
         Destroy(this.gameObject);
+    }
+
+    public void OpenFileBrowser()
+    {
+        FileBrowser.SetFilters(true, new FileBrowser.Filter("Sprite", ".png"));
+        FileBrowser.SetDefaultFilter(".png");
+        FileBrowser.SetExcludedExtensions(".lnk", ".tmp", ".zip", ".rar", ".exe", ".json");
+        FileBrowser.AddQuickLink("Users", "C:\\Users", null);
+        FileBrowser.ShowLoadDialog((paths) => { targetSprite.text = paths[0]; }, () => { Debug.Log("Canceled"); }, FileBrowser.PickMode.Files, false, null, null, "Select Mod File", "Select");
     }
 }

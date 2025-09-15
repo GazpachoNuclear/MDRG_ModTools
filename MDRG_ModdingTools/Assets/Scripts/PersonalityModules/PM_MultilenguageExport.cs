@@ -141,9 +141,10 @@ public class PM_MultilenguageExport : MonoBehaviour
             createJSON(i);
             createLUA(i);
             string[] filePaths = new string[2];
+            string[] relativePaths = new string[2];
             filePaths[0] = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "mod.json";
             filePaths[1] = savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "script.lua";
-            exportManager.ExportCompressedMod(filePaths, savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "mod.zip");
+            exportManager.ExportCompressedMod(filePaths, relativePaths, savePath + "/MachineTranslations/" + myStructuredData.rows[1].parameter[i] + "/" + "mod.zip");
         }
 
         path.text = savePath + "/MachineTranslations";

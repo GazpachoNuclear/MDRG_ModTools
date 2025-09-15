@@ -84,9 +84,10 @@ public class ITEM_Export : MonoBehaviour
         createJSON();
         createLUA();
         string[] filePaths = new string[2];
+        string[] relativePaths = new string[2];
         filePaths[0] = savePath + "/" + CleanName(content.transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.json";
         filePaths[1] = savePath + "/" + CleanName(content.transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "script.lua";
-        exportManager.ExportCompressedMod(filePaths, savePath + "/" + CleanName(content.transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip");
+        exportManager.ExportCompressedMod(filePaths, relativePaths, savePath + "/" + CleanName(content.transform.GetChild(0).GetComponentInChildren<TMP_InputField>().text) + "/" + "mod.zip");
 
         path.text = savePath;
         popUp.SetActive(true);

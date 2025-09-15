@@ -22,7 +22,7 @@ public class Export : MonoBehaviour
     }
 
     //Compresses the several files into a ZIP file (ready to load on the game)
-    public void ExportCompressedMod(string[] filePath, string zipPath)
+    public void ExportCompressedMod(string[] filePath, string[] relativePaths, string zipPath)
     {
         using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Create))
         {
@@ -31,7 +31,7 @@ public class Export : MonoBehaviour
                 for (int i=0; i<filePath.Length; i++)
                 {
                     string entryName = Path.GetFileName(filePath[i]);
-                    archive.CreateEntryFromFile(filePath[i], entryName);
+                    archive.CreateEntryFromFile(filePath[i], relativePaths[i] + entryName);
                 }
             }
         }
