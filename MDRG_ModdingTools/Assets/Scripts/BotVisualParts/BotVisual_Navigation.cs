@@ -24,4 +24,6 @@ public class BotVisual_Navigation : MonoBehaviour
         mainCamera.orthographicSize = zoom[zoomIndex];
     }
 
+
+    //MISSING POSITIONAL NAVIGATION!
 }
