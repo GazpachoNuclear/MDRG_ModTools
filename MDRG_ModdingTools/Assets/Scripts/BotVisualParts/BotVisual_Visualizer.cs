@@ -16,17 +16,21 @@ public class BotVisual_Visualizer : MonoBehaviour
     void Start()
     {
         position = 0;
-        ChangePosition();
+        ChangePosition(position);
     }
 
 
-    public void ChangePosition()
+    public void ChangePosition(int pos)
     {
+        position = pos;
+
         for (int i=0; i < botAssemblies.Length; i++)
         {
             botAssemblies[i].SetActive(false);
+            botOverlays[i].SetActive(false);
         }
         botAssemblies[position].SetActive(true);
+        botOverlays[position].SetActive(true);
 
         UpdateList();
 
